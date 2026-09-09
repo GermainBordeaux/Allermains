@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ton Allergies-deck</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎴 Ton Allergies-deck</h1>
+            <p class="subtitle">Collectionne les cartes d'allergies</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Cherche une allergie...">
+            <select id="rarityFilter">
+                <option value="">Tous les niveaux</option>
+                <option value="common">Commun</option>
+                <option value="uncommon">Peu commun</option>
+                <option value="rare">Rare</option>
+                <option value="epic">Épique</option>
+                <option value="legendary">Légendaire</option>
+            </select>
+            <button id="refreshBtn">🔄 Rafraîchir</button>
+        </div>
+
+        <div id="errorMessage" class="error"></div>
+
+        <div class="cards-grid" id="cardsGrid">
+            <div class="loading">Chargement des cartes...</div>
+        </div>
+    </div>
+
+    <script src="supabase.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
