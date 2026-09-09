@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Allermains — Mon Allergies-deck</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">🤲</div>
+        <div>
+          <h1 class="site-title">Allermains</h1>
+          <div class="site-sub">Ton deck d'allergies — collection physique & virtuel</div>
+        </div>
+      </div>
+
+      <div id="auth-area" class="auth-area">
+        <div id="auth-email" class="auth-email"></div>
+        <button id="auth-action" class="btn small" style="display:none">Se déconnecter</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Ajoute ta carte physique à ton Allergies-deck</h2>
+        <p class="muted">Saisis le code à 7 chiffres inscrit sur ta carte et elle apparaîtra dans ton porte-carte virtuel.</p>
+
+        <div id="auth-forms" class="card compact auth-forms">
+          <div id="signed-out-forms">
+            <input id="email-input" type="email" placeholder="Email" />
+            <input id="pass-input" type="password" placeholder="Mot de passe" />
+            <div class="row">
+              <button id="btn-signin" class="btn">Se connecter</button>
+              <button id="btn-signup" class="btn outline">S'inscrire</button>
+            </div>
+            <div id="auth-msg" class="muted small"></div>
+          </div>
+        </div>
+
+        <div id="redeem-panel" class="card compact" style="display:none">
+          <label for="code-input" class="label">Code (7 chiffres)</label>
+          <div class="row">
+            <input id="code-input" type="text" maxlength="7" placeholder="ex: 0123456" inputmode="numeric" />
+            <button id="btn-redeem" class="btn">Ajouter</button>
+          </div>
+          <div id="redeem-msg" class="muted small"></div>
+        </div>
+
+      </div>
+
+      <div class="hero-right">
+        <div class="deck-preview card">
+          <h3>Ton Allergies-deck</h3>
+          <div id="deck-list" class="deck-grid">
+            <div class="placeholder">Connecte-toi pour afficher ton deck</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="section-title">Comment ça marche ?</h3>
+      <div class="how">
+        <div class="how-step">
+          <div class="how-step-number">1</div>
+          <div>
+            <strong>Crée un compte</strong>
+            <div class="muted">Inscris-toi avec ton email et mot de passe.</div>
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="how-step-number">2</div>
+          <div>
+            <strong>Rentre le code</strong>
+            <div class="muted">Saisis le code de 7 chiffres présent sur la carte physique.</div>
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="how-step-number">3</div>
+          <div>
+            <strong>Ta carte est ajoutée</strong>
+            <div class="muted">La carte apparaît dans ton Allergies-deck.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="muted">© Germain — Allermains</div>
+    </footer>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
