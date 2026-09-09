@@ -1,8 +1,9 @@
 // app.js (ESM)
-// Remplace les constantes ci-dessous par les tiennes (NE PAS utiliser service_role)
-const SUPABASE_URL = "https://REPLACE_WITH_YOUR_SUPABASE_URL";
-const SUPABASE_ANON_KEY = "REPLACE_WITH_YOUR_ANON_KEY";
-const REDEEM_FUNCTION_URL = "https://REPLACE_WITH_YOUR_REDEEM_FUNCTION_URL"; // ex: https://.../functions/v1/redeem-card
+// Configuré par Copilot : TODO ne pas mettre la service_role dans ce fichier
+const SUPABASE_URL = "https://ptujuyctoapckraxaurq.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB0dWp1eWN0b2FwY2tyYXhhdXJxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg5MzU2MjEsImV4cCI6MjEwNDUxMTYyMX0.3e4Q4XUPPsn9Px-6ITtOfItlnbxjsI2XAIcS4FElcIw";
+// URL présumée de la Supabase Edge Function (déployez la function et modifie si besoin)
+const REDEEM_FUNCTION_URL = "https://ptujuyctoapckraxaurq.functions.supabase.co/redeem-card"; // ex: https://<project>.functions.supabase.co/redeem-card
 
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
