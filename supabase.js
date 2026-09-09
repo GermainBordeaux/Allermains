@@ -1,6 +1,6 @@
 // Configuration Supabase
-const SUPABASE_URL = 'YOUR_SUPABASE_URL'; // À remplacer par votre URL
-const SUPABASE_KEY = 'YOUR_SUPABASE_KEY'; // À remplacer par votre clé publique
+const SUPABASE_URL = 'https://ptujuyctoapckraxaurq.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_32wuO23LisdGjXTW1QyQfA_p-BP2ajU';
 
 // Client Supabase simple
 class SupabaseClient {
